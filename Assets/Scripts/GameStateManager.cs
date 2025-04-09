@@ -107,7 +107,7 @@ public class GameStateManager : MonoBehaviour
                 Debug.Log("Switched to Gameplay State");
                 // TODO: Add logic for starting/resuming the game (e.g., enable player movement)
                 Time.timeScale = 1f;
-                Cursor.visible = false;
+                Cursor.visible = true;
                 break;
 
             case GameState.Paused_State:
