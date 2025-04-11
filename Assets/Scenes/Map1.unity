@@ -6427,8 +6427,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableObj: {fileID: 0}
   hamburgerObj: {fileID: 0}
-  coinText: {fileID: 0}
-  gemText: {fileID: 0}
+  coinText: {fileID: 294505222}
+  gemText: {fileID: 1217755383}
   gemCount: 0
   coinCount: 0
   marshmallowCollected: 0
@@ -7448,9 +7448,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 2351459820566797490, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3331940594135939896, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.5041778
+      value: 3.0041778
       objectReference: {fileID: 0}
     - target: {fileID: 3331940594135939896, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7630,11 +7634,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 552209681539004617, guid: 0eeeb622a7a0f394190c667974ca4aa7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.995822
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 552209681539004617, guid: 0eeeb622a7a0f394190c667974ca4aa7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4921288
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 552209681539004617, guid: 0eeeb622a7a0f394190c667974ca4aa7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7646,15 +7650,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 552209681539004617, guid: 0eeeb622a7a0f394190c667974ca4aa7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 552209681539004617, guid: 0eeeb622a7a0f394190c667974ca4aa7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 552209681539004617, guid: 0eeeb622a7a0f394190c667974ca4aa7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 552209681539004617, guid: 0eeeb622a7a0f394190c667974ca4aa7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7671,6 +7675,10 @@ PrefabInstance:
     - target: {fileID: 1694119299842757855, guid: 0eeeb622a7a0f394190c667974ca4aa7, type: 3}
       propertyPath: m_Name
       value: Hamburger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694119299842757855, guid: 0eeeb622a7a0f394190c667974ca4aa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1694119299842757855, guid: 0eeeb622a7a0f394190c667974ca4aa7, type: 3}
       propertyPath: m_TagString
@@ -8666,7 +8674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &8188524146541618192
 CanvasRenderer:
   m_ObjectHideFlags: 0

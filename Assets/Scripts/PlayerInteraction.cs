@@ -42,8 +42,19 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Update()
     {
+        if (hamburgerObj == null)
+        {
+            hamburgerObj = GameObject.Find("Hamburger");
+        }
+
         coinText.text = $"{coinCount} / 3";
         gemText.text = $"{gemCount} / 5";
+
+        if (coinCount == 3 && hamburgerObj != null)
+        {
+            hamburgerObj.transform.position = new Vector3(-6, 2.5f, 0);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && interactableObj != null)
         {
             //Debug.Log($"Hey, the player is now interacting with {interactableObj}");
