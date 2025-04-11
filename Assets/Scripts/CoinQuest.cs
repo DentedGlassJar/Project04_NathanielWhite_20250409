@@ -19,7 +19,7 @@ public class CoinQuest : MonoBehaviour
     public GameObject duringObj;
     public GameObject afterObj;
 
-    private bool hasQuestStarted;
+    public PlayerInteraction playerInteractionRef;
 
     // Debugging variables to store the current and last game state as strings for easier debugging in the Inspector
     [SerializeField] private string currentStateDebug;
@@ -29,8 +29,6 @@ public class CoinQuest : MonoBehaviour
     {
         // Set the initial state of the game to Main Menu when the game starts
         ChangeState(GameState.Before_State);
-
-        hasQuestStarted = false;
     }
 
     // Method to change the current game state
@@ -48,31 +46,6 @@ public class CoinQuest : MonoBehaviour
         // Store the new state in a string variable for debugging purposes
         currentStateDebug = currentState.ToString();
     }
-
-
-
-    private void Update()
-    {
-
-        if (hasQuestStarted == true)
-        {
-
-        }
-        else if (hasQuestStarted == true && )
-        /*if (Input.GetKeyDown(KeyCode.Escape) && currentState != GameState.MainMenu_State)
-        {
-            if (currentState != GameState.Paused_State)
-            {
-                ChangeState(GameState.Paused_State);
-            }
-            else
-            {
-                ChangeState(GameState.Gameplay_State);
-            }
-
-        }*/
-    }
-
 
     // Handles any specific actions that need to occur when switching to a new state
     private void HandleStateChange(GameState state)

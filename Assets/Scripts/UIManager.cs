@@ -16,6 +16,11 @@ public class UIManager : MonoBehaviour
         gameStateRef.ChangeState(GameStateManager.GameState.Gameplay_State);
     }
 
+    public void OptionsMethod()
+    {
+        gameStateRef.ChangeState(GameStateManager.GameState.Options_State);
+    }
+
     public void ResumeGamePlay()
     {
         gameStateRef.ChangeState(GameStateManager.GameState.Gameplay_State);

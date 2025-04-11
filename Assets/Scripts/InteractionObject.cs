@@ -95,29 +95,31 @@ public class InteractionObject : MonoBehaviour
 
     public void Coin()
     {
+        playerRef.coinCount++;
         gameObject.SetActive(false);
-
     }
 
     public void Gem()
     {
         playerRef.gemCount++;
-
         gameObject.SetActive(false);
     }
 
     public void Marshmallow()
     {
+        playerRef.marshmallowCollected = true;
         gameObject.SetActive(false);
     }
 
     public void Bill()
     {
+        playerRef.billCollected = true;
         gameObject.SetActive(false);
     }
 
     public void Chisel()
     {
+        playerRef.chiselCollected = true;
         gameObject.SetActive(false);
     }
 

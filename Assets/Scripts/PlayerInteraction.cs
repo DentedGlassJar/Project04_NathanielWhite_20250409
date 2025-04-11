@@ -6,12 +6,16 @@ public class PlayerInteraction : MonoBehaviour
 {
     public GameObject interactableObj = null;
 
+    public GameObject hamburgerObj;
+
     public int gemCount;
     public int coinCount;
 
     public bool marshmallowCollected;
     public bool billCollected;
     public bool chiselCollected;
+
+    public CoinQuest coinQuestRef;
 
     public void Start()
     {
@@ -36,10 +40,14 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && interactableObj != null)
         {
-            Debug.Log($"Hey, the player is now interacting with {interactableObj}");
+            //Debug.Log($"Hey, the player is now interacting with {interactableObj}");
             interactableObj.GetComponent<InteractionObject>().Interact(); 
         }
-    
+
+        if (Input.GetKeyDown(KeyCode.Space) && interactableObj == coinQuestRef.beforeObj)
+        {
+
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)

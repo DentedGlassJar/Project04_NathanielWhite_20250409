@@ -8,6 +8,7 @@ public class GameStateManager : MonoBehaviour
     public enum GameState
     {
         MainMenu_State,   // The game is at the main menu
+        Options_State,    // The game is at the options menu
         Gameplay_State,   // The game is actively being played
         Paused_State      // The game is paused
     }
@@ -16,6 +17,7 @@ public class GameStateManager : MonoBehaviour
     public GameState currentState { get; private set; }
 
     public GameObject mainMenuUI;
+    public GameObject optionsUI;
     public GameObject gamePlayUI;
     public GameObject pausedUI;
 
@@ -59,7 +61,6 @@ public class GameStateManager : MonoBehaviour
             {
                 ChangeState(GameState.Gameplay_State);
             }
-
         }
     }
 
@@ -74,6 +75,15 @@ public class GameStateManager : MonoBehaviour
         else
         {
             mainMenuUI.SetActive(false);
+        }
+
+        if (currentState == GameState.Options_State)
+        {
+            optionsUI.SetActive(true);
+        }
+        else
+        {
+            optionsUI.SetActive(false);
         }
 
         if (currentState == GameState.Gameplay_State)
@@ -99,6 +109,12 @@ public class GameStateManager : MonoBehaviour
             case GameState.MainMenu_State:
                 Debug.Log("Switched to MainMenu State");
                 // TODO: Add logic for when the game enters the Main Menu (e.g., show UI)
+                Time.timeScale = 0f;
+                Cursor.visible = true;
+                break;
+
+            case GameState.Options_State:
+                Debug.Log("Switched to Options State");
                 Time.timeScale = 0f;
                 Cursor.visible = true;
                 break;
