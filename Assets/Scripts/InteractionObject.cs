@@ -9,6 +9,10 @@ public class InteractionObject : MonoBehaviour
 
     public TMP_Text infoText;
 
+    public GameObject ChiselMark;
+    public GameObject MarshMark;
+    public GameObject BillMark;
+
     public PlayerInteraction playerRef;
 
     public enum InteractionType
@@ -108,18 +112,21 @@ public class InteractionObject : MonoBehaviour
     public void Marshmallow()
     {
         playerRef.marshmallowCollected = true;
+        MarshMark.SetActive(true);
         gameObject.SetActive(false);
     }
 
     public void Bill()
     {
         playerRef.billCollected = true;
+        BillMark.SetActive(true);
         gameObject.SetActive(false);
     }
 
     public void Chisel()
     {
         playerRef.chiselCollected = true;
+        ChiselMark.SetActive(true);
         gameObject.SetActive(false);
     }
 

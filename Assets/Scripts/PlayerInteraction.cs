@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
@@ -8,6 +9,9 @@ public class PlayerInteraction : MonoBehaviour
 
     public GameObject hamburgerObj;
 
+    public TMP_Text coinText;
+    public TMP_Text gemText;
+    
     public int gemCount;
     public int coinCount;
 
@@ -38,15 +42,12 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Update()
     {
+        coinText.text = $"{coinCount} / 3";
+        gemText.text = $"{gemCount} / 5";
         if (Input.GetKeyDown(KeyCode.Space) && interactableObj != null)
         {
             //Debug.Log($"Hey, the player is now interacting with {interactableObj}");
             interactableObj.GetComponent<InteractionObject>().Interact(); 
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && interactableObj == coinQuestRef.beforeObj)
-        {
-
         }
     }
 
