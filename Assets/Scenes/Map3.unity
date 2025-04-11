@@ -4843,6 +4843,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5505609865380646049, guid: d8b5e3fde10ddd94cad97860dfe72161, type: 3}
   m_PrefabInstance: {fileID: 761896813}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &807631894 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1110948675056711655, guid: d8b5e3fde10ddd94cad97860dfe72161, type: 3}
+  m_PrefabInstance: {fileID: 761896813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &938892925
 GameObject:
   m_ObjectHideFlags: 0
@@ -6426,6 +6437,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 349454290205580359, guid: 60c2ef58ef8f35a409271ed0ee66f121, type: 3}
+      propertyPath: infoText
+      value: 
+      objectReference: {fileID: 807631894}
+    - target: {fileID: 349454290205580359, guid: 60c2ef58ef8f35a409271ed0ee66f121, type: 3}
+      propertyPath: interType
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 349454290205580359, guid: 60c2ef58ef8f35a409271ed0ee66f121, type: 3}
       propertyPath: infoMessage
       value: I seen this guy last at the side of one of the islands...

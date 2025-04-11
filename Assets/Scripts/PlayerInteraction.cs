@@ -14,7 +14,7 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject billCoinObj;
     public GameObject marshCoinObj;
 
-
+    public TMP_Text infoText;
     public TMP_Text coinText;
     public TMP_Text gemText;
     
@@ -24,8 +24,6 @@ public class PlayerInteraction : MonoBehaviour
     public bool marshmallowCollected;
     public bool billCollected;
     public bool chiselCollected;
-
-    public CoinQuest coinQuestRef;
 
     public void Start()
     {
@@ -113,6 +111,7 @@ public class PlayerInteraction : MonoBehaviour
         if (collision.gameObject.CompareTag("Interactable"))
         {
             interactableObj = null;
+            infoText.text = "";
         }
     }
 }

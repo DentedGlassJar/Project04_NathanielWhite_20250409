@@ -93,6 +93,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoMessage: 
   infoText: {fileID: 0}
+  ChiselMark: {fileID: 0}
+  MarshMark: {fileID: 0}
+  BillMark: {fileID: 0}
   playerRef: {fileID: 0}
   interType: 8
   sentences:
@@ -204,6 +207,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoMessage: 
   infoText: {fileID: 0}
+  ChiselMark: {fileID: 0}
+  MarshMark: {fileID: 0}
+  BillMark: {fileID: 0}
   playerRef: {fileID: 0}
   interType: 8
   sentences:
@@ -232,7 +238,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4634465416436294517}
   - component: {fileID: 6988342283486833117}
-  - component: {fileID: 3992739481646370292}
   - component: {fileID: 6812190260408856315}
   - component: {fileID: 5558836248884940461}
   m_Layer: 0
@@ -312,51 +317,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3992739481646370292
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6984188778272700892}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!95 &6812190260408856315
 Animator:
   serializedVersion: 5
@@ -458,7 +418,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.07493806}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -469,7 +429,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 2.0013614}
   m_EdgeRadius: 0
 --- !u!114 &5484559058274696418
 MonoBehaviour:
@@ -485,6 +445,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoMessage: 
   infoText: {fileID: 0}
+  ChiselMark: {fileID: 0}
+  MarshMark: {fileID: 0}
+  BillMark: {fileID: 0}
   playerRef: {fileID: 0}
   interType: 8
   sentences:
