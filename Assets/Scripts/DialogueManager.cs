@@ -6,14 +6,16 @@ using UnityEngine;
 public class DialogueManager : MonoBehaviour
 {
     private Queue<string> queueDialogue;
+    
 
     public GameObject dialogueUIObj;
-    public TMP_Text dialogueTextObj;
+    public TextMeshProUGUI dialogueTextObj;
 
     // Start is called before the first frame update
     void Start()
     {
         queueDialogue = new Queue<string>();
+
         dialogueUIObj.SetActive(false);
     }
 

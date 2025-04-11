@@ -9,12 +9,19 @@ public class InteractionObject : MonoBehaviour
 
     public TMP_Text infoText;
 
+    public PlayerInteraction playerRef;
+
     public enum InteractionType
     {
         Nothing,
-        Pickup,
+        Coin,
+        Gem,
+        Marshmallow,
+        Bill,
+        Chisel,
+        Hamburger,
         Info,
-        Dialogue
+        Dialogue,
     }
 
     private DialogueManager dialogueManagerRef;
@@ -25,21 +32,50 @@ public class InteractionObject : MonoBehaviour
     [Header("Dialogue Text")]
     [TextArea] public string[] sentences; // Creates a drop-down menu based on the InteractionType enum
 
+
     private void Awake()
     {
         dialogueManagerRef = GetComponent<DialogueManager>();
     }
 
+    private void Update()
+    {
+        if (playerRef == null)
+        {
+            playerRef = GameObject.Find("PlayerController").GetComponent<PlayerInteraction>();
+        }
+    }
+
     public void Interact()
     {
-        switch(interType)
+        switch (interType)
         {
             case InteractionType.Nothing:
                 Nothing();
                 break;
 
-            case InteractionType.Pickup:
-                Pickup();
+            case InteractionType.Coin:
+                Coin();
+                break;
+
+            case InteractionType.Gem:
+                Gem();
+                break;
+
+            case InteractionType.Marshmallow:
+                Marshmallow();
+                break;
+
+            case InteractionType.Bill:
+                Bill();
+                break;
+
+            case InteractionType.Chisel:
+                Chisel();
+                break;
+
+            case InteractionType.Hamburger:
+                Hamburger();
                 break;
 
             case InteractionType.Info:
@@ -54,12 +90,39 @@ public class InteractionObject : MonoBehaviour
 
     public void Nothing()
     {
-        Debug.Log($"Interaction type not defined");
+        //Debug.Log($"Interaction type not defined");
     }
 
-    public void Pickup()
+    public void Coin()
     {
-        Debug.Log($"Picking up object: {gameObject.name}");
+        gameObject.SetActive(false);
+
+    }
+
+    public void Gem()
+    {
+        playerRef.gemCount++;
+
+        gameObject.SetActive(false);
+    }
+
+    public void Marshmallow()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void Bill()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void Chisel()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void Hamburger()
+    {
         gameObject.SetActive(false);
     }
 
