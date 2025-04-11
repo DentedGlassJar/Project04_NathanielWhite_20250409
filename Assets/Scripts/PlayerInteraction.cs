@@ -8,6 +8,12 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject interactableObj = null;
 
     public GameObject hamburgerObj;
+    public GameObject billObj;
+
+    public GameObject gemCoinObj;
+    public GameObject billCoinObj;
+    public GameObject marshCoinObj;
+
 
     public TMP_Text coinText;
     public TMP_Text gemText;
@@ -47,12 +53,52 @@ public class PlayerInteraction : MonoBehaviour
             hamburgerObj = GameObject.Find("Hamburger");
         }
 
+        if (billObj == null)
+        {
+            billObj = GameObject.Find("Bill");
+        }
+
+        if (gemCoinObj == null)
+        {
+            gemCoinObj = GameObject.Find("GemCoin");
+        }
+
+        if (billCoinObj == null)
+        {
+            billCoinObj = GameObject.Find("BillCoin");
+        }
+
+        if (marshCoinObj == null)
+        {
+            marshCoinObj = GameObject.Find("MarshCoin");
+        }
+
         coinText.text = $"{coinCount} / 3";
         gemText.text = $"{gemCount} / 5";
 
-        if (coinCount == 3 && hamburgerObj != null)
+        if (coinCount >= 3 && hamburgerObj != null)
         {
             hamburgerObj.transform.position = new Vector3(-6, 2.5f, 0);
+        }
+
+        if (chiselCollected == true && billObj != null)
+        {
+            billObj.transform.position = new Vector3(-2, 2, 0);
+        }
+
+        if (gemCount >= 5 && gemCoinObj != null)
+        {
+            gemCoinObj.transform.position = new Vector3(3.5f, 1.5f, 0);
+        }
+
+        if (billCollected == true && billCoinObj != null)
+        {
+            billCoinObj.transform.position = new Vector3(6.5f, 2, 0);
+        }
+
+        if (marshmallowCollected == true && marshCoinObj != null)
+        {
+            marshCoinObj.transform.position = new Vector3(0.25f, 2, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && interactableObj != null)

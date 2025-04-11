@@ -1151,7 +1151,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2351459820566797490, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_Name
-      value: Coin (1)
+      value: BillCoin
       objectReference: {fileID: 0}
     - target: {fileID: 3331940594135939896, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1159,7 +1159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3331940594135939896, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 11.75
       objectReference: {fileID: 0}
     - target: {fileID: 3331940594135939896, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1726,7 +1726,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2351459820566797490, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_Name
-      value: Coin
+      value: MarshCoin
       objectReference: {fileID: 0}
     - target: {fileID: 3331940594135939896, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1734,7 +1734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3331940594135939896, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 11.75
       objectReference: {fileID: 0}
     - target: {fileID: 3331940594135939896, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8094,7 +8094,7 @@ Transform:
   m_GameObject: {fileID: 2136244538}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.557056, y: -3.415347, z: 0}
+  m_LocalPosition: {x: 9.307056, y: -3.415347, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

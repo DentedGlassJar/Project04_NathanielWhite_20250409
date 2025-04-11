@@ -6427,6 +6427,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableObj: {fileID: 0}
   hamburgerObj: {fileID: 0}
+  billObj: {fileID: 0}
+  gemCoinObj: {fileID: 0}
+  billCoinObj: {fileID: 0}
+  marshCoinObj: {fileID: 0}
   coinText: {fileID: 294505222}
   gemText: {fileID: 1217755383}
   gemCount: 0
@@ -7446,7 +7450,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2351459820566797490, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_Name
-      value: Coin
+      value: GemCoin
       objectReference: {fileID: 0}
     - target: {fileID: 2351459820566797490, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_IsActive
@@ -7454,11 +7458,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3331940594135939896, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.0041778
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 3331940594135939896, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.742129
+      value: 12.5
       objectReference: {fileID: 0}
     - target: {fileID: 3331940594135939896, guid: 6ce7a7e2e4c05604aa27e3f36fee931d, type: 3}
       propertyPath: m_LocalPosition.z
